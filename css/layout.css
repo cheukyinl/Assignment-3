@@ -1,0 +1,68 @@
+/* Layouts */
+
+.div_flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.item_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+nav {
+    height: 100px;
+    position: sticky;
+    top: 0px;
+}
+
+/* Classes */
+
+.menu__ad {
+    width: 25vw;
+    height: auto;
+}
+
+.menu__content {
+    width: 50vw;
+    height: auto;
+}
+
+.menu__search {
+    height: 300px;
+    display: grid;
+    place-items: center;
+}
+
+.menu__items {
+    height: auto;
+}
+
+.item__box {
+    height: auto;
+    width: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .div_flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu__ad {
+        width: 100vw;
+        height: auto;
+    }
+    
+    .menu__content {
+        order: -1;
+        width: 100vw;
+        height: auto;
+    }
+}

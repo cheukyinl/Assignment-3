@@ -1,8 +1,21 @@
 /* Layouts */
 
-.div_flex {
+.row_column_switch,.flex_row {
     display: flex;
     flex-direction: row;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+.row_center {
+    align-items: center;
 }
 
 .bar {
@@ -11,18 +24,35 @@
     justify-content: flex-start;
 }
 
-.item_grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.row_wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+/* Classes */
 
 nav {
     height: 100px;
     position: sticky;
     top: 0px;
+
 }
 
-/* Classes */
+nav div div .icon {
+    height: 70px;
+    width: 70px;
+}
+
+nav div div .logo {
+    height: 70px;
+    width: auto;
+}
 
 .menu__ad {
     width: 25vw;
@@ -35,9 +65,7 @@ nav {
 }
 
 .menu__search {
-    height: 300px;
-    display: grid;
-    place-items: center;
+    height: 40vh;
 }
 
 .menu__items {
@@ -45,12 +73,61 @@ nav {
 }
 
 .item__box {
-    height: auto;
-    width: auto;
+    height: 300px;
+    width: 200px;
+    overflow: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.item__box .item__image {
+    height: 66%;
+    width: 100%;
+    object-fit: contain;
+    background-color: white;
+}
+
+.icon {
+    height: 50px;
+    width: 50px;
+}
+
+.purchase-list {
+    width: 200px;
+    min-height: 60vh;
+}
+
+.product-description__content > * {
+    flex: 1 1 0px;
+}
+
+.product-description__content .item__image {
+    height: 500px;
+    width: 50%;
+    object-fit: contain;
+    background-color: white;
+}
+
+.shopping-cart_content {
+    justify-content: center;
+}
+
+.login-box {
+    width: 300px;
+    height: 50vh;
+}
+
+.purchase-summary {
+    width: 300px;
+    height: 60vh;
 }
 
 @media screen and (max-width: 600px) {
-    .div_flex {
+    nav div div p {
+        display: none;
+    }
+
+    .row_column_switch {
         display: flex;
         flex-direction: column;
     }
@@ -64,5 +141,22 @@ nav {
         order: -1;
         width: 100vw;
         height: auto;
+    }
+
+    .item__box {
+        height: 240px;
+        width: 160px;
+    }
+
+    .purchase-list {
+        width: 160px;
+    }
+
+    .login-box,.purchase-summary {
+        width: 240px;
+    }
+
+    .product__image {
+        order: -1;
     }
 }

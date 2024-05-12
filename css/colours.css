@@ -9,3 +9,11 @@ nav {
 .item__box {
     background-color:aqua;
 }
+
+.login-box {
+    background-color: chartreuse;
+}
+
+.purchase-summary {
+    background-color: darkviolet;
+}

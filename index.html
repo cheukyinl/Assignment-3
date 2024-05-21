@@ -10,34 +10,36 @@
 <body>
     <nav class="center">
         <div class="flex_row space_between row_center">
-            <div>
+            <a href="index.html">
                 <img class="logo" src="icon/logo.svg" alt="Scorptec's logo">
-            </div>
-            <div class="flex_row row_center">
+            </a>
+            <a class="flex_row row_center">
                 <img class="icon" src="icon/location.svg" alt="location icon">
-                <p>Delivery</p>
-            </div>
-            <div class="flex_row row_center">
+                <h3>Delivery</h3>
+            </a>
+            <a class="flex_row row_center">
                 <img class="icon" src="icon/person-circle.svg" alt="location icon">
-                <p>Login</p>
-            </div>
-            <div class="flex_row row_center">
+                <h3>Login</h3>
+            </a>
+            <a href="shopping-cart.html" class="flex_row row_center">
                 <img class="icon" src="icon/cart.svg" alt="location icon">
-                <p>Shopping cart</p>
-            </div>
+                <h3>Shopping cart</h3>
+            </a>
         </div>
     </nav>
 
     <div class="menu row_column_switch">
-        <div style="background-color: yellow;" class="menu__ad">
-            <p>div box left ad</p>
+        <div class="menu__ad flex_column align_center">
+            <img class="item__image" src="./image/ad1.jpg" alt="ad">
+            <img class="item__image" src="./image/ad3.jpg" alt="ad">
+            <img class="item__image" src="./image/ad5.jpg" alt="ad">
         </div>
-        <div style="background-color: red;" class="menu__content">
-            <div style="background-color: orange" class="menu__search center">
-                <h1>What are you looking for?</h1>
+        <div class="menu__content">
+            <div class="menu__search flex_column space_evenly align_center">
+                <h6 class="text_center">What are you looking for?</h6>
                 <div class="search__row flex_row">
-                    <input class="search__bar" type="text" placeholder="Find and items here.">
-                    <a href="product-list.html">click me</a>
+                    <input class="search_bar" type="text" placeholder="Find any items here.">
+                    <a href="product-list.html"><img src="icon/search.svg" alt="search button"></a>
                 </div>
             </div>
             <div class="menu__items">
@@ -66,8 +68,9 @@
                 </div>
             </div>
         </div>
-        <div style="background-color: violet;" class="menu__ad">
-            <p>div box right ad</p>
+        <div class="menu__ad flex_column align_center">
+            <img class="item__image" src="./image/ad2.jpg" alt="ad">
+            <img class="item__image" src="./image/ad4.jpg" alt="ad">
         </div>
     </div>
 

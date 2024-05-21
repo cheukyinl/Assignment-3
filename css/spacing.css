@@ -1,4 +1,4 @@
-nav div div {
+nav div a {
     margin: 10px 3vw;
 }
 
@@ -8,15 +8,20 @@ nav div div {
 }
 
 .menu__bar_padding {
-    padding: 20px;
+    padding: 20px 5vw;
 }
 
 .bar_padding {
     padding: 20px 10vw;
 }
 
-.item__box,.purchase-list,.login-box, .purchase-summary {
+.item__box, .item__quantity-box, .purchase-list, .login-box, .purchase-summary {
     padding: 10px;
+}
+
+.product-description__secondary-info {
+    padding: 20px;
+    gap: 20px;
 }
 
 .search {
@@ -27,16 +32,47 @@ nav div div {
     margin: 20px 20px 10px 20px;
 }
 
+.menu__ad {
+    margin: 10px;
+    gap: 10px;
+}
+
 .tag {
     margin: 10px 20px 0 20px;
+    padding: 0.25rem 0.5rem;
+}
+
+.hero-button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.secondary-button {
+    display: flex;
+    flex: 1;
+    padding: 0 3rem;
+}
+
+.secondary-info__buttons {
+    gap: 10px;
 }
 
 .purchase-list {
     margin: 20px 20px 0 20px;
+    padding: 20px;
 }
 
 .purchase-confirmation__content {
     gap: 20px;
+}
+
+.product-description__primary-info {
+    padding: 30px;
+    gap: 20px;
+}
+
+.login-box,.purchase-summary {
+    padding: 20px;
 }
 
 @media screen and (max-width: 600px) {

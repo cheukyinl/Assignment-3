@@ -8,28 +8,45 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav>
-        <p>This is a very new GIT test.</p>
+    <nav class="center">
+        <div class="flex_row space_between row_center">
+            <a href="index.html">
+                <img class="logo" src="icon/logo.svg" alt="Scorptec's logo">
+            </a>
+            <a class="flex_row row_center">
+                <img class="icon" src="icon/location.svg" alt="location icon">
+                <h3>Delivery</h3>
+            </a>
+            <a class="flex_row row_center">
+                <img class="icon" src="icon/person-circle.svg" alt="location icon">
+                <h3>Login</h3>
+            </a>
+            <a href="shopping-cart.html" class="flex_row row_center">
+                <img class="icon" src="icon/cart.svg" alt="location icon">
+                <h3>Shopping cart</h3>
+            </a>
+        </div>
     </nav>
 
-    <div style="background-color: orange" class="search center">
-        <div class="search__row flex_row">
-            <input class="search_bar" type="text" placeholder="Find and items here.">
-            <a href="product-list.html">click me</a>
+    <div class="search center">
+        <div class="search__row flex_row row_center">
+            <input class="search_bar" type="text" placeholder="Find any items here.">
+            <a href="product-list.html"><img src="icon/search.svg" alt="search button"></a>
         </div>
         <ul class=" tag_list row_wrap">
-            <li><button class="tag">thing 1</button></li>
-            <li><button class="tag">thing 2</button></li>
-            <li><button class="tag">thing 3</button></li>
-            <li><button class="tag">thing 4</button></li>
-            <li><button class="tag">thing 5</button></li>
-            <li><button class="tag">thing 6</button></li>
+            <li><button class="tag">Brand</button></li>
+            <li><button class="tag">Headphone type</button></li>
+            <li><button class="tag">Colour</button></li>
+            <li><button class="tag">Connection</button></li>
+            <li><button class="tag">Lighting</button></li>
+            <li><button class="tag">Price</button></li>
         </ul>
     </div>
 
-    <div class="menu__items" style="background-color: brown;">
+    <div class="menu__items">
         <div class="bar bar_padding">
-            <h2>Top items</h2>
+            <a href="index.html"><img src="icon/caretback.svg" alt="back button"></a>
+            <h2>Searched items</h2>
         </div>
         <div class="item__content row_wrap bar_padding">
             <a href="product-description-1.html">
@@ -42,15 +59,32 @@
                             <p>In stock</p>
                         </div>
                         <div class="flex_column">
-                            <s>$49</s>
-                            <b>$39</b>
+                            <ul class="price-box">
+                                <li><s>$49</s></li>
+                                <li><b>$39</b></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </a>
-            <div class="item__box">
-                <p>222222222222222222222222222222222222222222222222222222222222222222</p>
-            </div>
+            <a href="product-description-1.html">
+                <div class="item__box flex_column space_between">
+                    <img class="item__image item__image--special" src="./image/gaming_pc_1.jpg" alt="gaming_pc_1">
+                    <p>Scorptec Pulse RTX 4060 Gaming PC</p>
+                    <div class="flex_row space_between row_center">
+                        <div class="flex_row row_center">
+                            <img class="icon" src="./icon/checkmark.svg" alt="checkmark">
+                            <p>In stock</p>
+                        </div>
+                        <div class="flex_column">
+                            <ul class="price-box">
+                                <li><s>$49</s></li>
+                                <li><b>$39</b></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </a>
             <div class="item__box">
                 <p>3333333333333333333333333333333333333333333333333333333333333333333</p>
             </div>

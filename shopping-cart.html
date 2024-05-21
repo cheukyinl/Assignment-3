@@ -8,34 +8,73 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav>
-        <p>This is a very new GIT test.</p>
+    <nav class="center">
+        <div class="flex_row space_between row_center">
+            <a href="index.html">
+                <img class="logo" src="icon/logo.svg" alt="Scorptec's logo">
+            </a>
+            <a class="flex_row row_center">
+                <img class="icon" src="icon/location.svg" alt="location icon">
+                <h3>Delivery</h3>
+            </a>
+            <a class="flex_row row_center">
+                <img class="icon" src="icon/person-circle.svg" alt="location icon">
+                <h3>Login</h3>
+            </a>
+            <a href="shopping-cart.html" class="flex_row row_center">
+                <img class="icon" src="icon/cart.svg" alt="location icon">
+                <h3>Shopping cart</h3>
+            </a>
+        </div>
     </nav>
 
-    <div style="background-color: orange" class="search center">
-        <div class="search__row flex_row">
-            <input class="search_bar" type="text" placeholder="Find and items here.">
-            <a href="product-list.html">click me</a>
+    <div class="search center">
+        <div class="search__row flex_row row_center">
+            <input class="search_bar" type="text" placeholder="Find any items here.">
+            <a href="product-list.html"><img src="icon/search.svg" alt="search button"></a>
         </div>
     </div>
 
+    <div class="bar bar_padding">
+        <a href="product-list.html"><img src="icon/caretback.svg" alt="back button"></a>
+        <h2>Shopping cart</h2>
+    </div>
     <div class="shopping-cart_content row_wrap">
         <div class="item__content row_wrap">
-            <div class="item__box">
-                <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <div class="flex_column">
+                <div class="item__box">
+                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                </div>
+                <div class="item__quantity-box flex_row space_between">
+                    <p>Qty: 1</p>
+                    <img src="icon/add.svg" alt="add items">
+                </div>
             </div>
-            <div class="item__box">
-                <p>222222222222222222222222222222222222222222222222222222222222222222</p>
+            <div class="flex_column">
+                <div class="item__box">
+                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+                </div>
+                <div class="item__quantity-box flex_row space_between">
+                    <p>Qty: 1</p>
+                    <img src="icon/add.svg" alt="add items">
+                </div>
             </div>
         </div>
-        <div class="purchase-list" style="background-color: bisque;">
-            <h3>Purchase list</h3>
-            <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-            </ul>
-            <h2>Total: $68</h2>
-            <div><h4>Checkout</h4></div>
+        <div class="purchase-list flex_column space_between">
+            <div>
+                <h2><b>Purchase list</b></h2>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                </ul>
+            </div>
+            <div>
+                <h2><b>Total: $68</b></h2>
+                <p>(Includes GST)</p>
+                <P>Total saving: $10</P>
+                <br>
+                <button class="hero-button"><a href="purchase-confirmation.html"><h2>Checkout</h2></a></button>
+            </div>
         </div>
     </div>
 </body>

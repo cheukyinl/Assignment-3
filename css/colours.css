@@ -1,19 +1,36 @@
-nav {
-    background-color: lime;
+:root {
+    --primary: #191d23;
+    --secondary: #4b515a;
+    --secondary-highlight: rgb(49, 54, 61);
+    --highlight: #ab3535;
+}
+
+body {
+    background-color: var(--primary);
+    color: white;
+}
+
+nav, .secondary-button, .item__box, .product-description__primary-info, .purchase-list, .login-box, .purchase-summary{
+    background-color: var(--secondary);
 }
 
 .bar {
-    background-color: lightblue;
+    background-color: var(--highlight);
 }
 
-.item__box {
-    background-color:aqua;
+.hero-button, .item__quantity-box {
+    background-color: white;
 }
 
-.login-box {
-    background-color: chartreuse;
+.hero-button:hover {
+    background-color: var(--primary);
 }
 
-.purchase-summary {
-    background-color: darkviolet;
+.secondary-button:hover {
+    background-color: var(--secondary-highlight);
+}
+
+.item__image--special {
+    box-sizing: border-box;
+    border: 3px solid var(--highlight);
 }

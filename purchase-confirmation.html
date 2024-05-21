@@ -8,35 +8,67 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <nav>
-        <p>This is a very new GIT test.</p>
+    <nav class="center">
+        <div class="flex_row space_between row_center">
+            <a href="index.html">
+                <img class="logo" src="icon/logo.svg" alt="Scorptec's logo">
+            </a>
+            <a class="flex_row row_center">
+                <img class="icon" src="icon/location.svg" alt="location icon">
+                <h3>Delivery</h3>
+            </a>
+            <a class="flex_row row_center">
+                <img class="icon" src="icon/person-circle.svg" alt="location icon">
+                <h3>Login</h3>
+            </a>
+            <a href="shopping-cart.html" class="flex_row row_center">
+                <img class="icon" src="icon/cart.svg" alt="location icon">
+                <h3>Shopping cart</h3>
+            </a>
+        </div>
     </nav>
     
+    <div class="bar bar_padding">
+        <a href="shopping-cart.html"><img src="icon/caretback.svg" alt="back button"></a>
+        <h2>Purchase confirmation</h2>
+    </div>
+
     <div class="purchase-confirmation__content row_wrap bar_padding">
-        <div class="login-box">
-            <h3>Login</h3>
-            <p>Email</p>
-            <input type="text">
-            <p>Password</p>
-            <input type="text">
-            <div><h4>Login</h4></div>
+        <div class="login-box flex_column space_between">
+            <div class="flex_column">
+                <h2><b>Login</b></h2>
+                <br>
+                <p>Email</p>
+                <input type="text">
+                <p>Password</p>
+                <input type="text">
+            </div>
+            <button class="hero-button"><h3>Login</h3></button>
         </div>
-        <div class="purchase-summary">
-            <h3>Summary</h3>
-            <ul>
-                <li>
-                    <p>item 1</p>
-                    <p>x1</p>
-                    <p>$20</p>
-                </li>
-                <li>
-                    <p>item 2</p>
-                    <p>x1</p>
-                    <p>$35</p>
-                </li>
-            </ul>
-            <h2>Total: $68</h2>
-            <div><h4>Confirm purchase</h4></div>
+        <div class="purchase-summary flex_column space_between">
+            <div class="flex_column">
+                <h2><b>Summary</b></h2>
+                <br>
+                <ul>
+                    <li>
+                        <p>item 1</p>
+                        <p>x1</p>
+                        <h3 class="text_right"><b>$20</b></h3>
+                    </li>
+                    <li>
+                        <p>item 2</p>
+                        <p>x1</p>
+                        <h3 class="text_right"><b>$35</b></h3>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2><b>Total: $68</b></h2>
+                <p>(Includes GST)</p>
+                <P>Total saving: $10</P>
+                <br>
+                <button class="hero-button"><h3>Confirm purchase</h3></button>
+            </div>
         </div>
     </div>
 </body>

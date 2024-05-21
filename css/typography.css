@@ -1,3 +1,95 @@
-::placeholder {
+@font-face {
+    font-family: 'Akshar';
+    src: url(../font/Akshar-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Akshar';
+    src: url(../font/Akshar-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Neon';
+    src: url(../font/TextMeOne-Regular.ttf);
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Akshar', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+b {
+    font-weight: bold;
+}
+
+s {
+    text-decoration: line-through;
+    opacity: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol {
+    list-style-type: disc;
+}
+
+p, li {
+    margin: 0.5rem 0;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+h4 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+h6 {
+    font-family: 'Neon', sans-serif;
+    font-size: 5rem;
+    margin: 0 0 2rem 0;
+
+    text-shadow: rgba(255,0,0,0.9) 0px 0px 8px;
+}
+
+.text_center {
     text-align: center;
+}
+
+.text_right {
+    text-align: right;
+}
+
+::placeholder, input[type="text"], button {
+    font-family: 'Akshar', sans-serif;
+    text-align: center;
+}
+
+.price-box {
+    text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
 }

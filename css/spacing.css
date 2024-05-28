@@ -71,6 +71,11 @@ nav div a {
     gap: 20px;
 }
 
+.image__primary, .image__secondary img {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
 .login-box,.purchase-summary {
     padding: 20px;
 }
